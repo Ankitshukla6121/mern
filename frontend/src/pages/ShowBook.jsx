@@ -12,7 +12,7 @@ const {id}= useParams();
 useEffect(()=>{
   setLoading(true);
   axios
-  .get(`http://localhost:5555/books/${id}`)
+  .get(`https://mern-backend-r8ci.onrender.com/books/${id}`)
   .then((res)=>{
     setBook(res.data);
     setLoading(false);
