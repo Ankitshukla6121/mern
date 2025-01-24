@@ -16,7 +16,7 @@ const EditBook = () => {
 
   useEffect(() => {
     setLoading(true);
-    axios.get(`https://deploy-backend-qmqf.onrender.com/books/${id}`)
+    axios.get(`https://mern-backend-r8ci.onrender.com/books/${id}`)
     .then((response) => {
         setAuthor(response.data.author);
         setPublishYear(response.data.publishYear)
